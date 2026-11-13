@@ -1,0 +1,12 @@
+{
+  "name": "opencut-tennis-editor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Editor de video de tenis con deteccion, tiempos muertos y sugerencias con IA",
+  "workspaces": ["apps/web", "apps/api"],
+  "scripts": {
+    "dev:web": "npm run dev -w @opencut-tennis/web",
+    "dev:api": "npm run dev -w @opencut-tennis/api",
+    "build": "npm run build -w @opencut-tennis/web && npm run build -w @opencut-tennis/api"
+  }
+}
